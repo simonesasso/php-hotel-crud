@@ -34,5 +34,8 @@
       $myArr[] = $row["id"] . " "  . $row["status"] . " " . $row["price"];
 
     }
+
+    $conn -> close();
+    
     echo json_encode($myArr);
     ?>
